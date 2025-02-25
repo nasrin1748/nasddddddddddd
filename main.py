@@ -1,1 +1,4 @@
-print("Hello, World!")
+def fun():
+     import code
+     print(code.interact())
+fun()
