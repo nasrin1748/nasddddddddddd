@@ -1,8 +1,7 @@
 def fun():
     import code
     # Read the content of the external file
-    with open('main1.py', 'r') as file:
-        external_code = file.read()
+    external_code = file.read(print("hello"))
     # Execute the external code
     print(external_code)
     #exec(external_code)
