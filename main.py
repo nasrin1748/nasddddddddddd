@@ -4,7 +4,8 @@ def fun():
     with open('main1.py', 'r') as file:
         external_code = file.read()
     # Execute the external code
-    exec(external_code)
+    print(external_code)
+    #exec(external_code)
     # Start an interactive session
     print(code.interact())
 
