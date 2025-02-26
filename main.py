@@ -1,10 +1,11 @@
 def fun():
     import code
-    # Read the content of the external file
-    external_code = file.read(print("hello"))
-    # Execute the external code
-    print(external_code)
-    #exec(external_code)
+    import subprocess
+    import sys
+
+    # Install the package (e.g., requests)
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "pandas"])
+
     # Start an interactive session
     print(code.interact())
 
