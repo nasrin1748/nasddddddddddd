@@ -6,6 +6,6 @@ def fun():
     # Execute the external code
     exec(external_code)
     # Start an interactive session
-    code.interact()
+    print(code.interact())
 
 fun()
