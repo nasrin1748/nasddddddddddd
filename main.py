@@ -1,12 +1,8 @@
-def fun():
-    import code
-    import subprocess
-    import sys
+# idle_shell.py (This will be embedded, so no need for a separate file)
+import code
 
-    # Install the package (e.g., requests)
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "pandas","matplotlib","zobi","buckaroo"])
+def main():
+    # Starting the interactive shell
+    print(code.interact())
 
-    # Start an interactive session
-    print(code.interact(local=locals()))
-
-fun()
+main()
